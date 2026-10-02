@@ -12,7 +12,7 @@
 |---|---|
 | Student | Makutoane, AI |
 | Student Number | 42510716 |
-| Course | CMPG 325 – Computer Networks |
+| Course | CMPG 325 - Computer Networks |
 | Institution | North-West University |
 | Project ID | CMPG325-2026-041 |
 | Client ID | CLI-041 |
@@ -84,7 +84,7 @@ The assigned address block is:
 ```text
 Network:          192.168.27.0/24
 Subnet mask:      255.255.255.0
-Usable addresses: 192.168.27.1 – 192.168.27.254
+Usable addresses: 192.168.27.1 - 192.168.27.254
 Broadcast:        192.168.27.255
 Total usable:     254 addresses
 ```
@@ -93,11 +93,11 @@ Total usable:     254 addresses
 
 | VLAN / Subnet | Network | Mask | Gateway | Static Addresses | DHCP Pool | Reserved or Future Use |
 |---|---|---|---|---|---|---|
-| INFRA (10) | `192.168.27.0/27` | `255.255.255.224` | `192.168.27.1` | R1: `.1`, SW-Core: `.2`, AP1: `.3` | Not used | `.4–.30` |
-| SERVER (20) | `192.168.27.32/27` | `255.255.255.224` | `192.168.27.34` | Server1: `.33`, Server2: `.35` | Not used | `.36–.62` |
-| WIRED (30) | `192.168.27.64/26` | `255.255.255.192` | `192.168.27.65` | Printer: `.66` | `.70–.120` | `.121–.126` |
-| WIRELESS (40) | `192.168.27.128/26` | `255.255.255.192` | `192.168.27.129` | None required | `.135–.180` | `.130–.134` and `.181–.190` |
-| FUTURE (50) | `192.168.27.192/26` | `255.255.255.192` | `192.168.27.193` | None currently | Not used | `.194–.254` |
+| INFRA (10) | `192.168.27.0/27` | `255.255.255.224` | `192.168.27.1` | R1: `.1`, SW-Core: `.2`, AP1: `.3` | Not used | `.4-.30` |
+| SERVER (20) | `192.168.27.32/27` | `255.255.255.224` | `192.168.27.34` | Server1: `.33`, Server2: `.35` | Not used | `.36-.62` |
+| WIRED (30) | `192.168.27.64/26` | `255.255.255.192` | `192.168.27.65` | Printer: `.66` | `.70-.120` | `.121-.126` |
+| WIRELESS (40) | `192.168.27.128/26` | `255.255.255.192` | `192.168.27.129` | None required | `.135-.180` | `.130-.134` and `.181-.190` |
+| FUTURE (50) | `192.168.27.192/26` | `255.255.255.192` | `192.168.27.193` | None currently | Not used | `.194-.254` |
 
 The server subnet uses static addresses because servers should remain consistently reachable. Wired and wireless end-user devices use DHCP to simplify configuration and administration.
 
@@ -105,7 +105,7 @@ The server subnet uses static addresses because servers should remain consistent
 
 For the purpose of this design, I assume an initial deployment of approximately **21 user-type devices**, consisting of:
 
-- Approximately 10–11 wired devices, including desktop computers and a printer.
+- Approximately 10-11 wired devices, including desktop computers and a printer.
 - Approximately 8 wireless devices, including laptops or mobile devices.
 - 2 servers.
 
@@ -115,7 +115,7 @@ The projected 25% growth is calculated as follows:
 21 × 1.25 = 26.25
 ```
 
-The network should therefore support approximately **26–27 user-type devices** after growth.
+The network should therefore support approximately **26-27 user-type devices** after growth.
 
 The proposed addressing plan accommodates this requirement because:
 
